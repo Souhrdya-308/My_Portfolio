@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souhardya Banerjee | AI/ML Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Souhardya Banerjee – AI/ML Enthusiast, Competitive Programmer, and Software Engineer specializing in Deep Learning and Computer Vision.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <span class="loader-text">SB</span>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Noise Texture Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Mouse Spotlight -->
+  <div id="cursor-spotlight"></div>
+
+  <!-- Stars canvas -->
+  <canvas id="stars-canvas"></canvas>
+  <!-- Spaceships canvas -->
+  <canvas id="spaceship-canvas"></canvas>
+
+  <!-- ════════ HEADER ════════ -->
+  <header>
+    <a href="#hero" class="logo">Souhardya</a>
+    <nav id="main-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#training">Training</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#coding">Coding</a>
+      <a href="#college">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-box">
+      <div class="profile-pic-wrapper">
+        <img src="Image\face.jpeg" alt="Souhardya Banerjee" class="profile-pic">
+      </div>
+      <div class="hero-text">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Software Intern at Infineon Technologies</span>
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Souhardya <span>Banerjee</span></h1>
+        <p class="tagline">AI / ML Enthusiast &bull; Competitive Programmer &bull; Software Engineer</p>
+        <div class="typing-text">
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
+          <a href="resume.pdf" download class="btn btn-secondary">📄 Download Resume</a>
+          <a href="#contact" class="btn btn-outline">📬 Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ ABOUT ════════ -->
+  <section id="about">
+    <div class="reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Who I am and what drives me</p>
+    </div>
+    <div class="about-container reveal">
+      <div class="about-content">
+        <div class="about-text-block">
+          <p>I'm a <strong>Computer Science and Engineering</strong> student specializing in <strong>Artificial
+              Intelligence and Machine Learning</strong> at Lovely Professional University, driven by a deep passion for
+            building intelligent systems that solve real-world problems.</p>
+          <p>As a dedicated <strong>competitive programmer</strong>, I've solved 900+ problems across LeetCode,
+            Codeforces, and GeeksforGeeks — sharpening my problem-solving skills in data structures, dynamic
+            programming, and graph algorithms. I thrive in fast-paced coding challenges and daily contests.</p>
+          <p>I've also qualified <strong>GATE 2026 in Computer Science & IT</strong>, demonstrating a solid grasp of
+            core computer science fundamentals including algorithms, operating systems, databases, and computer
+            architecture — a testament to disciplined preparation alongside my ongoing B.Tech studies.</p>
+          <p>Beyond academics, I hold a <strong>patent</strong> for "A Method for Sustainable Ground Water Management"
+            (Application No. 202511049684), reflecting my commitment to using technology for societal impact.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-number">900+</div>
+            <div class="highlight-label">Problems Solved</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">GATE</div>
+            <div class="highlight-label">2026 Qualified</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">9.14</div>
+            <div class="highlight-label">CGPA</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">1</div>
+            <div class="highlight-label">Patent Filed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ PROJECTS ════════ -->
+  <section id="projects">
+    <div class="reveal">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Real-world AI/ML solutions and system simulations</p>
+    </div>
+    <div class="grid">
+      <a class="card reveal" href="https://github.com/Souhrdya-308/Brain_MRI_Scanner_01" target="_blank">
+        <div class="card-image"><img src="Image\Brain_tumor.jpg" alt="Brain Tumor Detection"></div>
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">TensorFlow</span><span class="tag">CNNs</span><span class="tag">Google Colab</span>
+          </div>
+          <h3>Brain Tumor Detection</h3>
+          <p>Deep CNN model for multi-class brain tumor classification from MRI scans achieving 96% accuracy on unseen
+            data across glioma, meningioma, pituitary, and non-tumor classes.</p>
+          <span class="card-link-label">View Project →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://github.com/Souhrdya-308/Process_schedular_Simulator" target="_blank">
+        <div class="card-image"><img src="Image\CPU.jpg" alt="CPU Scheduler Simulator"></div>
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">Seaborn</span>
+          </div>
+          <h3>Smart CPU Scheduler Simulator</h3>
+          <p>GUI simulator visualizing CPU scheduling algorithms with dynamic Gantt charts, execution timelines, and
+            analytical dashboards for performance comparison.</p>
+          <span class="card-link-label">View Project →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://github.com/Souhrdya-308/Lung_Disease_Dignosis" target="_blank">
+        <div class="card-image"><img src="Image\Lung.jpg" alt="Lung Disease Diagnosis"></div>
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">ML</span><span class="tag">Classification</span><span class="tag">Medical AI</span>
+          </div>
+          <h3>Lung Disease Diagnosis</h3>
+          <p>Machine learning system designed to detect lung diseases from medical data enabling early diagnosis using
+            automated classification models and feature engineering.</p>
+          <span class="card-link-label">View Project →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════ SKILLS ════════ -->
+  <section id="skills">
+    <div class="reveal">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Technologies and competencies I work with</p>
+    </div>
+    <div class="skills-categories">
+
+      <!-- Languages / Frameworks -->
+      <div class="skills-category reveal">
+        <div class="category-header">
+          <span class="category-icon">⚡</span>
+          <h3>Languages / Frameworks</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-color="#A8B9CC">
+            <div class="skill-card-icon"><i class="devicon-c-plain colored"></i></div>
+            <span class="skill-card-name">C</span>
+          </div>
+          <div class="skill-card" data-color="#00599C">
+            <div class="skill-card-icon"><i class="devicon-cplusplus-plain colored"></i></div>
+            <span class="skill-card-name">C++</span>
+          </div>
+          <div class="skill-card" data-color="#ED8B00">
+            <div class="skill-card-icon"><i class="devicon-java-plain colored"></i></div>
+            <span class="skill-card-name">Java</span>
+          </div>
+          <div class="skill-card" data-color="#3776AB">
+            <div class="skill-card-icon"><i class="devicon-python-plain colored"></i></div>
+            <span class="skill-card-name">Python</span>
+          </div>
+          <div class="skill-card" data-color="#F7DF1E">
+            <div class="skill-card-icon"><i class="devicon-javascript-plain colored"></i></div>
+            <span class="skill-card-name">JavaScript</span>
+          </div>
+          <div class="skill-card" data-color="#FF6F00">
+            <div class="skill-card-icon"><i class="devicon-tensorflow-original colored"></i></div>
+            <span class="skill-card-name">TensorFlow</span>
+          </div>
+          <div class="skill-card" data-color="#FF4B4B">
+            <div class="skill-card-icon"><i class="devicon-streamlit-plain colored"></i></div>
+            <span class="skill-card-name">Streamlit</span>
+          </div>
+          <div class="skill-card" data-color="#F97316">
+            <div class="skill-card-icon">
+              <svg class="gradio-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M256 0L0 149.3v213.5L256 512l256-149.3V149.3L256 0z" fill="#F97316" />
+                <path d="M256 85l-170 98.3v196.5L256 478l170-98.3V183.3L256 85z" fill="#1a1a2e" />
+                <path d="M180 230l76-44 76 44v88l-76 44-76-44v-88z" fill="#F97316" opacity="0.9" />
+                <path d="M256 186l76 44v88l-76 44v-176z" fill="#FB923C" opacity="0.7" />
+              </svg>
+            </div>
+            <span class="skill-card-name">Gradio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools / Tech -->
+      <div class="skills-category reveal">
+        <div class="category-header">
+          <span class="category-icon">🛠️</span>
+          <h3>Tools / Tech</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-color="#F05032">
+            <div class="skill-card-icon"><i class="devicon-git-plain colored"></i></div>
+            <span class="skill-card-name">Git</span>
+          </div>
+          <div class="skill-card" data-color="#FFFFFF">
+            <div class="skill-card-icon"><i class="devicon-github-original colored"></i></div>
+            <span class="skill-card-name">GitHub</span>
+          </div>
+          <div class="skill-card" data-color="#FF9900">
+            <div class="skill-card-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
+            <span class="skill-card-name">AWS</span>
+          </div>
+          <div class="skill-card" data-color="#4479A1">
+            <div class="skill-card-icon"><i class="devicon-mysql-plain colored"></i></div>
+            <span class="skill-card-name">MySQL</span>
+          </div>
+          <div class="skill-card" data-color="#E95420">
+            <div class="skill-card-icon"><i class="devicon-ubuntu-plain colored"></i></div>
+            <span class="skill-card-name">Ubuntu</span>
+          </div>
+          <div class="skill-card" data-color="#007ACC">
+            <div class="skill-card-icon"><i class="devicon-vscode-plain colored"></i></div>
+            <span class="skill-card-name">VS Code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="skills-category reveal">
+        <div class="category-header">
+          <span class="category-icon">🧠</span>
+          <h3>Technical Skills</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-color="#38bdf8">
+            <div class="skill-card-icon"><span class="skill-card-emoji">📐</span></div>
+            <span class="skill-card-name">DSA</span>
+          </div>
+          <div class="skill-card" data-color="#818cf8">
+            <div class="skill-card-icon"><span class="skill-card-emoji">🧩</span></div>
+            <span class="skill-card-name">OOPs</span>
+          </div>
+          <div class="skill-card" data-color="#3776AB">
+            <div class="skill-card-icon"><i class="devicon-python-plain colored"></i></div>
+            <span class="skill-card-name">Machine Learning</span>
+          </div>
+          <div class="skill-card" data-color="#FF6F00">
+            <div class="skill-card-icon"><i class="devicon-tensorflow-original colored"></i></div>
+            <span class="skill-card-name">Deep Learning</span>
+          </div>
+          <div class="skill-card" data-color="#67e8f9">
+            <div class="skill-card-icon"><span class="skill-card-emoji">👁️</span></div>
+            <span class="skill-card-name">CNN</span>
+          </div>
+          <div class="skill-card" data-color="#6DB33F">
+            <div class="skill-card-icon"><i class="devicon-spring-original colored"></i></div>
+            <span class="skill-card-name">Spring Boot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills-category reveal">
+        <div class="category-header">
+          <span class="category-icon">🤝</span>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" data-color="#f472b6">
+            <div class="skill-card-icon"><span class="skill-card-emoji">🎯</span></div>
+            <span class="skill-card-name">Problem-Solving</span>
+          </div>
+          <div class="skill-card" data-color="#60a5fa">
+            <div class="skill-card-icon"><span class="skill-card-emoji">👥</span></div>
+            <span class="skill-card-name">Team Player</span>
+          </div>
+          <div class="skill-card" data-color="#34d399">
+            <div class="skill-card-icon"><span class="skill-card-emoji">📋</span></div>
+            <span class="skill-card-name">Project Mgmt</span>
+          </div>
+          <div class="skill-card" data-color="#a78bfa">
+            <div class="skill-card-icon"><span class="skill-card-emoji">🔄</span></div>
+            <span class="skill-card-name">Adaptability</span>
+          </div>
+          <div class="skill-card" data-color="#fbbf24">
+            <div class="skill-card-icon"><span class="skill-card-emoji">💬</span></div>
+            <span class="skill-card-name">Communication</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════ TRAINING ════════ -->
+  <section id="training">
+    <div class="reveal">
+      <h2 class="section-title">Training</h2>
+      <p class="section-subtitle">Intensive programs and hands-on learning</p>
+    </div>
+    <a class="training-card reveal"
+      href="https://drive.google.com/file/d/1YlRIoNIwEnpfvHZzxwgLn7JE9sBj3i72/view?usp=sharing" target="_blank">
+      <div class="training-top">
+        <div class="training-badge">
+          <span class="training-badge-icon">🏆</span>
+          <span class="training-badge-text">CERTIFIED</span>
+        </div>
+        <div class="training-meta">
+          <h3>AlgoTutor Academy</h3>
+          <span class="training-period">Jun 2025 – Jul 2025</span>
+        </div>
+      </div>
+      <h4 class="training-program">28 Days Competitive Programming Program at LPU</h4>
+      <div class="training-highlights">
+        <div class="training-stat">
+          <span class="training-stat-value">250+</span>
+          <span class="training-stat-label">Problems Solved</span>
+        </div>
+        <div class="training-stat">
+          <span class="training-stat-value">28</span>
+          <span class="training-stat-label">Days Intensive</span>
+        </div>
+        <div class="training-stat">
+          <span class="training-stat-value">10+</span>
+          <span class="training-stat-label">Topics Mastered</span>
+        </div>
+      </div>
+      <ul class="training-details">
+        <li>Solved 250+ problems across LeetCode and Codeforces, strengthening logical reasoning and analytical
+          thinking.</li>
+        <li>Mastered data structures, graphs, and dynamic programming, enhancing coding efficiency and accuracy.</li>
+        <li>Engaged in daily contests and challenges, improving speed, debugging, and time-bound problem-solving.</li>
+      </ul>
+      <span class="card-link-label">View Certificate →</span>
+    </a>
+  </section>
+
+  <!-- ════════ CERTIFICATES ════════ -->
+  <section id="certificates">
+    <div class="reveal">
+      <h2 class="section-title">Certificates</h2>
+      <p class="section-subtitle">Validated skills and achievements</p>
+    </div>
+    <div class="grid">
+      <a class="card reveal" href="https://drive.google.com/file/d/14nYt2wuxLouAPIPJYzoNhKN9Vw4YO0KG/view"
+        target="_blank">
+        <div class="card-image"><img src="Image\cc.jpg" alt="Computer Communications"></div>
+        <div class="card-content">
+          <h3>Computer Communications</h3>
+          <p>Coursera — Networking course covering protocols and communication systems.</p>
+          <span class="card-date">Dec 2024</span>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://drive.google.com/file/d/1BBQJ0Iq2hYtynO9WJUvuCEb5OxBp87AV/view"
+        target="_blank">
+        <div class="card-image"><img src="Image\bb.jpg" alt="Computer Networking"></div>
+        <div class="card-content">
+          <h3>Computer Networking</h3>
+          <p>Coursera — Fundamentals of networking infrastructure and internet protocols.</p>
+          <span class="card-date">Sep 2024</span>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://drive.google.com/file/d/11ldsu9gAtawZ-b8hrjerlx5T0ysc544k/view"
+        target="_blank">
+        <div class="card-image"><img src="Image\ai_ml.jpg" alt="Python for AI/ML"></div>
+        <div class="card-content">
+          <h3>Python for AI/ML</h3>
+          <p>CSE Pathshala — Python programming fundamentals for machine learning applications.</p>
+          <span class="card-date">Mar 2024</span>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://drive.google.com/file/d/10VFXQ_UafeBlXcA2ARjM2Y_In9MLA7d3/view"
+        target="_blank">
+        <div class="card-image"><img src="Image\iit_ai.jpg" alt="Deep Learning"></div>
+        <div class="card-content">
+          <h3>AI/ML Deep Learning</h3>
+          <p>IIT Delhi offline — Hands-on neural network and CNN training.</p>
+          <span class="card-date">Apr 2024</span>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hackerrank.com/certificates/5dc70eed1d7c" target="_blank">
+        <div class="card-image"><img src="Image\sql.jpg" alt="SQL Intermediate"></div>
+        <div class="card-content">
+          <h3>SQL Intermediate</h3>
+          <p>HackerRank — Certification validating SQL querying and database skills.</p>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hackerrank.com/certificates/11767a2bac63" target="_blank">
+        <div class="card-image"><img src="Image\se.jpg" alt="Software Engineer Intern"></div>
+        <div class="card-content">
+          <h3>Software Engineer Intern</h3>
+          <p>HackerRank — Certification covering software engineering fundamentals.</p>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hackerrank.com/certificates/5aaf8b1660f4" target="_blank">
+        <div class="card-image"><img src="Image\ps.jpg" alt="Problem Solving Intermediate"></div>
+        <div class="card-content">
+          <h3>Problem Solving Intermediate</h3>
+          <p>HackerRank — Algorithmic problem solving certification.</p>
+          <span class="card-link-label">View Certificate →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════ CODING PROFILES ════════ -->
+  <section id="coding">
+    <div class="reveal">
+      <h2 class="section-title">Coding Profiles</h2>
+      <p class="section-subtitle">My competitive programming presence</p>
+    </div>
+    <div class="grid">
+      <a class="card reveal" href="https://codolio.com/profile/shorya" target="_blank">
+        <div class="card-image"><img src="Image\codolio.jpg" alt="Codolio"></div>
+        <div class="card-content">
+          <h3>Codolio</h3>
+          <p>Centralized portfolio verifying competitive programming achievements across multiple platforms.</p>
+          <span class="card-link-label">Visit Profile →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://leetcode.com/u/shoryaa/" target="_blank">
+        <div class="card-image"><img src="Image\leetcode.jpg" alt="LeetCode"></div>
+        <div class="card-content">
+          <h3>LeetCode</h3>
+          <p>Practicing algorithmic problems covering data structures, graphs and dynamic programming.</p>
+          <span class="card-link-label">Visit Profile →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.geeksforgeeks.org/profile/banerjeesqwln" target="_blank">
+        <div class="card-image"><img src="Image\gfg.jpg" alt="GeeksforGeeks"></div>
+        <div class="card-content">
+          <h3>GeeksforGeeks</h3>
+          <p>Practicing technical coding problems and reading algorithm tutorials.</p>
+          <span class="card-link-label">Visit Profile →</span>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hackerrank.com/profile/banerjeesouhard1" target="_blank">
+        <div class="card-image"><img src="Image\hackerrank.jpg" alt="HackerRank"></div>
+        <div class="card-content">
+          <h3>HackerRank</h3>
+          <p>Programming challenges across SQL, algorithms and problem solving domains.</p>
+          <span class="card-link-label">Visit Profile →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════ EDUCATION ════════ -->
+  <section id="college">
+    <div class="reveal">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">My academic journey</p>
+    </div>
+    <div class="education-timeline">
+      <div class="education-item reveal">
+        <div class="edu-marker"></div>
+        <div class="edu-content">
+          <div class="college-header">
+            <div class="lpu-logo-wrapper">
+              <img src="Image\lpu.jpg" alt="Lovely Professional University" class="college-img">
+            </div>
+            <div class="college-header-text">
+              <h3>Lovely Professional University</h3>
+              <p class="college-degree">B.Tech CSE — AI & Machine Learning</p>
+              <span class="edu-period">Aug 2023 – Present &bull; Jalandhar, Punjab</span>
+            </div>
+          </div>
+          <div class="college-stats">
+            <div class="stat-item">
+              <div class="stat-value">9.14</div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">900+</div>
+              <div class="stat-label">Problems Solved</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">3+</div>
+              <div class="stat-label">AI/ML Projects</div>
+            </div>
+          </div>
+          <div class="college-desc">
+            <p>Studying Computer Science with specialization in AI/ML, exploring modern technologies, participating in
+              coding competitions, and developing impactful technical projects. Active in daily competitive programming
+              contests and building deep learning models.</p>
+          </div>
+        </div>
+      </div>
+      <div class="education-item reveal">
+        <div class="edu-marker"></div>
+        <div class="edu-content">
+          <div class="college-header-text">
+            <h3>Ryan International School</h3>
+            <p class="college-degree">12th ISC with Science — 88.75%</p>
+            <span class="edu-period">Mar 2021 – May 2023 &bull; Bangalore, Karnataka</span>
+          </div>
+        </div>
+      </div>
+      <div class="education-item reveal">
+        <div class="edu-marker"></div>
+        <div class="edu-content">
+          <div class="college-header-text">
+            <h3>Ryan International School</h3>
+            <p class="college-degree">10th ICSE with Science — 91%</p>
+            <span class="edu-period">Mar 2020 – May 2021 &bull; Bangalore, Karnataka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ ACHIEVEMENTS ════════ -->
+  <section id="achievements">
+    <div class="reveal">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-subtitle">Milestones and recognitions</p>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-item reveal">
+        <div class="achievement-icon">💡</div>
+        <div class="achievement-text">
+          <h4>Patent Filed & Accepted</h4>
+          <p>Filed and accepted a patent titled "A Method for Sustainable Ground Water Management" under Application No.
+            202511049684 by the Indian Patent Office.</p>
+          <span class="achievement-date">Aug 2025</span>
+        </div>
+      </div>
+      <div class="achievement-item reveal">
+        <div class="achievement-icon">🏅</div>
+        <div class="achievement-text">
+          <h4>900+ DSA Problems Solved</h4>
+          <p>Solved 900+ Data Structures and Algorithms problems across multiple platforms, with performance
+            consolidated and verified on Codolio.</p>
+          <span class="achievement-date">Present</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CONTACT ════════ -->
+  <section id="contact">
+    <div class="reveal">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's connect and build something great</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a class="contact-item" href="mailto:banerjeesouhardya@gmail.com">
+        <div class="contact-icon">📧</div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span>banerjeesouhardya@gmail.com</span>
+        </div>
+      </a>
+      <a class="contact-item" href="tel:+919845700962">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+          <span class="contact-label">Phone</span>
+          <span>+91 9845700962</span>
+        </div>
+      </a>
+      <a class="contact-item" href="https://github.com/Souhrdya-308" target="_blank">
+        <div class="contact-icon">💻</div>
+        <div class="contact-info">
+          <span class="contact-label">GitHub</span>
+          <span>github.com/Souhrdya-308</span>
+        </div>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/souhard0" target="_blank">
+        <div class="contact-icon">🔗</div>
+        <div class="contact-info">
+          <span class="contact-label">LinkedIn</span>
+          <span>linkedin.com/in/souhard0</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Souhardya Banerjee — Built with ❤️ and code</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
