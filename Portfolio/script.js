@@ -191,8 +191,8 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     const id = link.getAttribute('href');
     const target = document.querySelector(id);
     if (target) {
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      const headerH = document.querySelector('header').offsetHeight;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 24;
       window.scrollTo({ top, behavior: 'smooth' });
     }
     document.querySelector('nav').classList.remove('open');
